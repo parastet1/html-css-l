@@ -1,0 +1,35 @@
+h1 {
+  color: blue;
+  font-size: 26px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px; /* main heading h1, does not need to be the largest on in size*/
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5; /*some of the text stylings get inherited*/
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px; /*default font size is 16px*/
+}
