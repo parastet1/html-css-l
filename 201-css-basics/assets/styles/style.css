@@ -6,10 +6,16 @@ p,
 li {
   /* list selector */
   font-family: sans-serif; /* default: serif */
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
-  color: blue;
   font-size: 26px;
   /* font-family: sans-serif; */
   text-transform: uppercase;
@@ -86,3 +92,22 @@ li {
 /* NOTE: */
 /* in real world, we usually don't use IDs rather use CLASSES
 by doing so, we are prepared for future modifications */
+
+/* header {
+  background-color: #f7f7f7;
+} */
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border: 5px solid #1098ad; /*border-width,border-style,border-color*/
+  border-right: none;
+  border-left: none;
+}
+
+body {
+  /* background-color: orange; */
+}
