@@ -51,5 +51,6 @@ footer p {
 
 article header p {
   /* nested descendant selector */
+  /* encoding html structure into the css is not a good practice */
   font-style: italic;
 }
