@@ -44,13 +44,45 @@ li {
   /* font-size: 20px; default font size is 16px */
 }
 
-footer p {
-  /* descendant selector */
+/* footer p { */
+/* descendant selector */
+/* font-size: 16px;
+} */
+
+/* article header p { */
+/* nested descendant selector */
+/* encoding html structure into the css is not a good practice */
+/* font-style: italic;
+} */
+
+#author {
+  /* id selector */
+  /* id must not be repeated, it will create an invalid html */
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
   font-size: 16px;
 }
 
-article header p {
-  /* nested descendant selector */
-  /* encoding html structure into the css is not a good practice */
-  font-style: italic;
+.related-author {
+  /* class selector */
+  /* classes can be repeated, multiple html elements can have same class name */
+  /* convention: use dash(-) when the class name contains two or more words, it is ok to use underscore also as a separator but dash is more common in css */
+  /* all css rules defined for an element apply on it, but only one of them will take effect */
+  font-size: 18px;
+  font-weight: bold;
 }
+
+/* ul { */
+/*list-style: none;*/ /* removes the list styling, i.e. the bullets*/
+/* } */
+
+.related {
+  list-style: none;
+}
+
+/* NOTE: */
+/* in real world, we usually don't use IDs rather use CLASSES
+by doing so, we are prepared for future modifications */
