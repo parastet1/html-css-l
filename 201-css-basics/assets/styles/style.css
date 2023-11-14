@@ -126,6 +126,7 @@ by doing so, we are prepared for future modifications */
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px; /* most common is to use margin bottom to create verticle space*/
+  height: 80px;
 }
 
 aside {
@@ -134,6 +135,7 @@ aside {
   border-right: none;
   border-left: none;
   padding: 50px 0;
+  width: 500px;
 }
 
 body {
@@ -271,4 +273,10 @@ nav {
 
 article {
   margin-bottom: 60px;
+}
+
+.post-image {
+  /* width: 300px; */
+  width: 100%; /* relative to width of the containing context */
+  height: auto; /* useful in case the height is already specified in html */
 }
