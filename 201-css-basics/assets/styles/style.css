@@ -145,7 +145,37 @@ li:nth-child(even) {
 /* color: red;
 } */
 
-article p:last-child {
-  /* select any <p> inside <article> which is the last-child of its parent */
-  color: red;
+/* article p:last-child { */
+/* select any <p> inside <article> which is the last-child of its parent */
+/* color: red; */
+/* } */
+
+/* styling links */
+/* best practice: use pseudo-classes to style anchors */
+a:link {
+  /* target only the <a> which do actually have 'href' attribute */
+  color: #1098ad;
+  text-decoration: none;
 }
+
+a:visited {
+  color: #777;
+  /* best practice: give the same color for visited as the link */
+  color: #1098ad;
+}
+
+a:hover {
+  /* most important */
+  color: orangered;
+  /* font-weight: bold; */
+  /* text-decoration: underline dotted orangered; */
+  text-decoration: underline orangered;
+}
+
+a:active {
+  /* when the link is clicked or cliked and hold, then active pseudo class is added to the element */
+  background-color: black;
+  font-style: italic;
+}
+
+/* order to follow for links styling: lvha */
