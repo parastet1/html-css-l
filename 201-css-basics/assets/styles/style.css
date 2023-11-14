@@ -111,3 +111,41 @@ aside {
 body {
   /* background-color: orange; */
 }
+
+/* 
+.first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  /* pseudo-class is denoted with : */
+  /* every <li> element that is the first child */
+  font-weight: bold;
+}
+
+li:last-child {
+  /* every <li> element that is the last child */
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  /* <li> element that is the 2nd child */
+  /* color: red; */
+}
+
+li:nth-child(even) {
+  /* <li> element that is the child that comes at even places */
+  /* color: red; */
+}
+
+/* article p:first-child { */
+/* select any <p> which is the first child of its parent
+    if anyother element is the first child, then <p> will not be decorated
+  */
+/* color: red;
+} */
+
+article p:last-child {
+  /* select any <p> inside <article> which is the last-child of its parent */
+  color: red;
+}
