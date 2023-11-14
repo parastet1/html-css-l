@@ -70,3 +70,15 @@ button:hover {
   background-color: #fff;
   color: #000;
 }
+
+/* Theory #3: CSS Box model */
+
+/* box model defines how the element is displayed on the page and how they are sized */
+/* each element can be seen as a box that has content, border, space inside */
+/* content: text, images, etc. */
+/* content-width and content-height can be defined */
+/* padding is invisible space between the border and the content */
+/* so padding is inside space that we can create in the element */
+/* margin is space outside the element */
+/* fill area: area that gets filled with the background color and background image */
+/* fill area also include padding and the border, in other words, it occupies entire visible part of the element that is content + padding + border */
