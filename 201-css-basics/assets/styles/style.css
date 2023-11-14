@@ -1,13 +1,13 @@
-h1,
+/* h1,
 h2,
 h3,
 h4,
 p,
-li {
-  /* list selector */
-  font-family: sans-serif; /* default: serif */
-  color: #444;
-}
+li { */
+/* list selector */
+/* font-family: sans-serif; /* /* default: serif */
+/* color: #444; */
+/* } */
 
 h1,
 h2,
@@ -204,3 +204,36 @@ a:active {
 footer p {
   color: green !important;
 } */
+
+/* Theory #2: inheritance and universal selector */
+body {
+  /* color: red; */
+  /* mostly text related properties get inherited */
+  /* inherited properties get replaced or overridded easily by more specific rules */
+  /* inherited property have the lowest priority */
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+}
+
+/* nav a:link {
+  font-size: 18px;
+} */
+
+nav {
+  font-size: 18px;
+}
+
+/* universal selector */
+* {
+  /* lowest priority selector */
+  /* universal selector selects every single */
+  /* very useful when we don't want an inherited property to be applied
+  rather a property for each and every element of the page */
+
+  /* border-top: 10px solid #1098ad; */
+}
+
+/*NOTE: Difference between universal selector and body selector */
+/* Universal selector applies rules to each and every element without inheritance being involved */
+/* on the other hand, the property we put in the body get inherited to all the child element of the body element */
