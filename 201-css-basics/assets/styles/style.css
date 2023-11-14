@@ -179,3 +179,28 @@ a:active {
 }
 
 /* order to follow for links styling: lvha */
+
+/* Theory #1: conflict between selectors */
+/* if multiple rules apply to an element then selector matters */
+/* 0.0 !important */
+/* 0.1 inline styles */
+/* 1. ID, if multiple then last selector applies */
+/* 2. CLASS or PSEUDO CLASS, if multiple then last selector applies */
+/* 3. ELEMENT ---- ---- */
+/* 4. universal selector, least priority */
+
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
