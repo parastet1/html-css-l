@@ -16,6 +16,20 @@ p {
   margin: auto;
   margin-top: 32px;
   width: 750px;
+  position: relative;
+}
+
+.container::before {
+  content: "SALE";
+  position: absolute;
+  top: -15px;
+  left: -30px;
+  display: inline-block;
+  padding: 5px 10px;
+  letter-spacing: 3px;
+  background-color: red;
+  font-weight: bold;
+  color: #fff;
 }
 
 .article {
@@ -50,11 +64,48 @@ p {
 .article-more__info:link,
 .article-more__info:visited {
   color: #333;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .article-more__info:hover,
 .article-more__info:active {
   text-decoration: none;
+}
+
+.article-colors div {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.article-colors div:last-child {
+  margin-right: 0;
+}
+
+.article-colors__black {
+  background-color: black;
+}
+
+.article-colors__blue {
+  background-color: blue;
+}
+
+.article-colors__red {
+  background-color: red;
+}
+
+.article-colors__yellow {
+  background-color: rgb(216, 216, 39);
+}
+
+.article-colors__green {
+  background-color: green;
+}
+
+.article-colors__brown {
+  background-color: brown;
 }
 
 /* .article-details ul li:first-child {
