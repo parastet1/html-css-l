@@ -287,3 +287,41 @@ article {
   margin-right: auto; */
   margin: 0 auto;
 }
+
+/* Theory: types of boxes */
+/* block level elements::after
+
+occupy 100% width of the parent's width by default
+
+element are stacked one-after another
+
+*/
+
+/* inline element
+
+only occupies space necessary for its content
+
+no line break before or after the element
+
+height, width do not apply in box model
+padding, margin apply only horizontally
+
+*/
+
+/* inline-block */
+/* mix of block and inline level element */
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px; */
+  /* display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
