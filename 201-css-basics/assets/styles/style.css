@@ -140,6 +140,7 @@ aside {
 
 body {
   /* background-color: orange; */
+  /* position: relative; */
 }
 
 /* 
@@ -286,6 +287,7 @@ article {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+  position: relative;
 }
 
 /* Theory: types of boxes */
@@ -324,4 +326,20 @@ nav a:link {
 
 nav a:link:last-child {
   margin-right: 0;
+}
+
+/* theory: positioning */
+/* by default all element are in normal flow, that is 'position:relative' */
+/* 'position:absolute' makes the element to go out of normal flow*/
+/* absolutely positioned element can be placed relative to it container that has 'position:relative' using top, left, bottom, right properties */
+/* if no position:relative container is available then it is placed relative to the viewport that is relative to the <html> element */
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
