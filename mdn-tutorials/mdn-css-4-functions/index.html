@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS functions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      div {
+        /* border: 1px solid #999; */
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+      div:last-child {
+        margin-bottom: 0;
+      }
+
+      p {
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;
+      }
+
+      .first {
+        background-color: red;
+        animation: widthFrames1 ease-out 2s;
+      }
+
+      .second {
+        background-color: green;
+        width: calc(75%);
+        animation: widthFrames2 ease-out 2s;
+      }
+
+      .third {
+        background-color: blue;
+        width: calc(50%);
+        animation: widthFrames3 ease-out 2s;
+      }
+
+      .fourth {
+        background-color: teal;
+        width: calc(25%);
+        animation: widthFrames4 ease-out 2s;
+      }
+
+      span {
+        /* display: hidden; */
+        animation: widthIndicator 0s 2.1s forwards;
+        visibility: hidden;
+      }
+
+      @keyframes widthFrames1 {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes widthFrames2 {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 75%;
+        }
+      }
+
+      @keyframes widthFrames3 {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 50%;
+        }
+      }
+
+      @keyframes widthFrames4 {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 25%;
+        }
+      }
+
+      @keyframes widthIndicator {
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="first"><span>100%</span></p>
+    </div>
+    <div>
+      <p class="second"><span>75%</span></p>
+    </div>
+    <div>
+      <p class="third"><span>50%</span></p>
+    </div>
+    <div>
+      <p class="fourth"><span>25%</span></p>
+    </div>
+  </body>
+</html>

@@ -1,6 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: #333;
   font-family: sans-serif;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+.container {
+  margin: auto;
+  margin-top: 32px;
+  width: 750px;
 }
 
 .article {
@@ -13,10 +28,12 @@ body {
   padding-bottom: 10px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .article-price {
   font-size: 24px;
+  margin-top: 16px;
 }
 
 .article-shipping {
@@ -27,6 +44,7 @@ body {
 
 .article-details {
   text-transform: uppercase;
+  margin: 24px 0 16px 0;
 }
 
 .article-more__info:link,
@@ -51,19 +69,34 @@ ul li:last-child {
   margin-top: 5px;
 } */
 
-li:not(:first-child):not(:last-child) {
-  /* margin-collapsing will work between the <li> elements */
-  margin: 5px 0;
+ul {
+  margin-bottom: 16px;
 }
 
+li {
+  margin-left: 24px;
+  margin-bottom: 8px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* li:not(:first-child):not(:last-child) { */
+/* margin-collapsing will work between the <li> elements */
+/* margin: 5px 0;
+} */
+
 button {
+  text-transform: uppercase;
   background-color: #000;
   color: #fff;
   border: none;
   border-top: 4px solid #000;
-  border-right: 4px solid #000;
+  /* border-right: 4px solid #000; */
   font-size: 18px;
   padding: 5px;
+  width: 100%;
 }
 
 button:hover {
