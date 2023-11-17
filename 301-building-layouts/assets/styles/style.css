@@ -223,3 +223,21 @@ container element of these two elements, so the container will collapse in heigh
   display: block;
   clear: both;
 }
+
+.container {
+  width: 1200px;
+}
+
+article {
+  width: 875px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
