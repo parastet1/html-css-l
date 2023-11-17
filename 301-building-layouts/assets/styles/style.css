@@ -209,3 +209,9 @@ nav {
 because, both the floated elements are not out of the normal flow, hence there is no content in the 
 container element of these two elements, so the container will collapse in height.
 */
+
+/* fix collapsing height due to floating of child elements */
+
+.clear {
+  clear: both; /*clearing both floats*/
+}
