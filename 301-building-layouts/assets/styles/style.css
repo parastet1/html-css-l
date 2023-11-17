@@ -19,7 +19,7 @@ body {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 h1 {
@@ -182,3 +182,30 @@ button {
   right: 10px;
   bottom: 10px;
 }
+
+/* floats */
+/* float takes the element out of the normal flow, the space created by it will be filled by the subsequent elements below it */
+.author-image {
+  float: left;
+  margin-bottom: 16px; /*will work because <img> is inline element by behaves like inline-block*/
+}
+
+#author {
+  /* padding-left: 50px; */
+  margin-top: 10px;
+  float: left;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* because of floating of h1 and nav, a phenomena called collapsing of element will happen
+because, both the floated elements are not out of the normal flow, hence there is no content in the 
+container element of these two elements, so the container will collapse in height.
+*/
