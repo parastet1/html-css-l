@@ -212,6 +212,14 @@ container element of these two elements, so the container will collapse in heigh
 
 /* fix collapsing height due to floating of child elements */
 
-.clear {
-  clear: both; /*clearing both floats*/
+/* .clear { */
+/* clear: both;*/ /* clearing both floats */
+/* } */
+
+/* the clearfix tweaking to solve collapsing height problem due to floats */
+/* using ::after pseudo element works because, it adds a child element at the end of the container. */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
