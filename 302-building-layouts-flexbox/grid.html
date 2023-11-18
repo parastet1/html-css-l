@@ -14,7 +14,7 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        /* height: 150px; */
       }
       .el--4 {
         background-color: goldenrod;
@@ -48,6 +48,20 @@
         gap: 30px; /*earlier called grid-gap, margin will not work, hence use gap only*/
         column-gap: 30px;
         row-gap: 60px;
+        grid-template-columns: 200px 200px 1fr 100px;
+        grid-template-columns: 200px 200px 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr 1fr auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 1fr auto;
+        height: 500px;
       }
 
       .container--2 {
