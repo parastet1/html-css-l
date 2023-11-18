@@ -40,6 +40,20 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+
+        /* horizontally all flex items take the space as required by the content */
+        /* vertically each flex item is as tall as the tallest item */
+
+        align-items: center; /*align vertically center in the direction of flex direction, item dimension will be changed to the actual width and height they require according to the content*/
+
+        /* default value of align-items:strech, meaning all items will stretch as tall as the tallest element */
+        /* align-items: flex-start;
+        align-items: flex-end;
+        align-items: stretch; */
+
+        justify-content: center; /*align horizontally center all items along the flex direction*/
+        justify-content: space-between; /*distribute horizontal space equally between items*/
       }
     </style>
   </head>
