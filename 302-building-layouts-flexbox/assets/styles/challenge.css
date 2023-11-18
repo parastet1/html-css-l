@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: sans-serif;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+.container {
+  margin: auto;
+  margin-top: 32px;
+  width: 818px;
+  position: relative;
+}
+
+.container::before {
+  content: "SALE";
+  position: absolute;
+  top: -15px;
+  left: -30px;
+  display: inline-block;
+  padding: 5px 10px;
+  letter-spacing: 3px;
+  background-color: red;
+  font-weight: bold;
+  color: #fff;
+}
+
+.article {
+  border: 4px solid #000;
+}
+
+.article-title {
+  background-color: #f7f7f7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.article-price {
+  font-size: 24px;
+}
+
+.article-shipping {
+  line-height: 24px;
+  vertical-align: middle;
+  color: #7a7a7a;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.article-details {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.article-more__info:link,
+.article-more__info:visited {
+  color: #333;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.article-more__info:hover,
+.article-more__info:active {
+  text-decoration: none;
+}
+
+.article-colors div {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.article-colors div:last-child {
+  margin-right: 0;
+}
+
+.article-colors__black {
+  background-color: black;
+}
+
+.article-colors__blue {
+  background-color: blue;
+}
+
+.article-colors__red {
+  background-color: red;
+}
+
+.article-colors__yellow {
+  background-color: rgb(216, 216, 39);
+}
+
+.article-colors__green {
+  background-color: green;
+}
+
+.article-colors__brown {
+  background-color: brown;
+}
+
+ul {
+  margin-bottom: 16px;
+}
+
+li {
+  margin-left: 24px;
+  margin-bottom: 8px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-top: 4px solid #000;
+  font-size: 18px;
+  padding: 5px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.article-image__container,
+.article-price-colors__container,
+.article-details__container {
+  width: 270px;
+  float: left;
+  margin-bottom: 16px;
+}
+
+.article-price-colors__container,
+.article-details__container {
+  padding: 0 10px;
+}
+
+.article-price-colors__container p:first-child {
+  display: inline;
+  float: left;
+}
+
+.article-price-colors__container p:nth-child(2) {
+  display: inline;
+  float: right;
+}
+
+.article-price-colors__container p:nth-child(3),
+.clear {
+  clear: both;
+}
