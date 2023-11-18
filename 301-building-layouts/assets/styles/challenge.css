@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,7 +16,7 @@ p {
 .container {
   margin: auto;
   margin-top: 32px;
-  width: 750px;
+  width: 728px;
   position: relative;
 }
 
@@ -47,7 +48,7 @@ p {
 
 .article-price {
   font-size: 24px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
 
 .article-shipping {
@@ -58,7 +59,7 @@ p {
 
 .article-details {
   text-transform: uppercase;
-  margin: 24px 0 16px 0;
+  margin-bottom: 16px;
 }
 
 .article-more__info:link,
@@ -135,4 +136,16 @@ button {
 button:hover {
   background-color: #fff;
   color: #000;
+}
+
+.article-image__container,
+.article-price-colors__container,
+.article-details__container {
+  width: 240px;
+  float: left;
+  margin-bottom: 16px;
+}
+
+.clear {
+  clear: both;
 }
