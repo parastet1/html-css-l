@@ -10,10 +10,11 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
+  margin: 0 10px;
 }
 
 .container {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -57,7 +58,7 @@ nav {
 
 nav a:link {
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 
@@ -102,6 +103,7 @@ h2::after {
 #author {
   font-style: italic;
   font-size: 18px;
+  margin-bottom: 0;
 }
 
 .post-image {
@@ -124,6 +126,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 32px;
 }
 
 p {
@@ -157,7 +160,9 @@ aside {
 
 .related-author {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: normal;
+  margin-bottom: 0;
+  font-style: italic;
 }
 
 .related {
@@ -188,25 +193,25 @@ button {
 
 /* floats */
 /* float takes the element out of the normal flow, the space created by it will be filled by the subsequent elements below it */
-.author-image {
-  float: left;
-  margin-bottom: 16px; /*will work because <img> is inline element by behaves like inline-block*/
-}
+/* .author-image {
+  float: left; */
+/*margin-bottom: 16px;*/ /*will work because <img> is inline element by behaves like inline-block*/
+/* } */
 
-#author {
-  /* padding-left: 50px; */
-  margin-top: 10px;
+/* #author { */
+/* padding-left: 50px; */
+/* margin-top: 10px;
   float: left;
   margin-left: 20px;
-}
+} */
 
-h1 {
+/* h1 {
   float: left;
 }
 
 nav {
   float: right;
-}
+} */
 
 /* because of floating of h1 and nav, a phenomena called collapsing of element will happen
 because, both the floated elements are not out of the normal flow, hence there is no content in the 
@@ -221,13 +226,13 @@ container element of these two elements, so the container will collapse in heigh
 
 /* the clearfix tweaking to solve collapsing height problem due to floats */
 /* using ::after pseudo element works because, it adds a child element at the end of the container. */
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   display: block;
   clear: both;
-}
+} */
 
-.container {
+/* .container {
   width: 1200px;
 }
 
@@ -243,4 +248,41 @@ aside {
 
 footer {
   clear: both;
+} */
+
+/* flexbox */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.related-post {
+  display: flex;
+  gap: 15px;
+}
+
+.related-link:link {
+  display: inline-block;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+aside {
+  flex: 0 0 300px;
 }
