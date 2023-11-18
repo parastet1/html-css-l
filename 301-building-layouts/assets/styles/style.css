@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /*does not get inherited, hence put in universal selector so that it applies to every element in the page*/
+  /* default: box-sizing is content-box, so paddings and border are added to the content width and hight of the box in the total width */
+  /* box-sizing:border-box calculates the widht and height from the border, hence the content width and size will be decreased to fit the box within the borders */
 }
 
 body {
@@ -149,8 +152,7 @@ aside {
   border: 5px solid #1098ad;
   border-right: none;
   border-left: none;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 .related-author {
@@ -160,6 +162,7 @@ aside {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 #copyright {
