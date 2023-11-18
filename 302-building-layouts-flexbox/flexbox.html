@@ -56,16 +56,27 @@
         /*justify-content: space-between;*/ /*distribute horizontal space equally between items*/
         /* justify-content: flex-start; */
 
-        gap: 30px;
+        gap: 10px;
       }
 
       .el {
         /* margin-right: 30px; */ /*one way of adding gap or margin between elements but it is not needed now*/
+        /* default values */
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+        /* flex-basis: 200px; */
+        /* flex-shrink: 0; */
+        /* flex: 0 0 200px; */
+        /* flex-grow: 1; */
+
+        flex: 1;
       }
 
       .el--1 {
         align-self: flex-start;
         /* order: 2; */
+        /* flex-grow: 2; */
       }
 
       .el--5 {
