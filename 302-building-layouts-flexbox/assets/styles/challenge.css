@@ -139,6 +139,7 @@ button:hover {
   color: #000;
 }
 
+/*
 .article-image__container,
 .article-price-colors__container,
 .article-details__container {
@@ -165,4 +166,18 @@ button:hover {
 .article-price-colors__container p:nth-child(3),
 .clear {
   clear: both;
+}
+
+*/
+
+/* flexbox impl */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.article-price-shipping-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
