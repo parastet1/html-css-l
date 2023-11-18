@@ -52,8 +52,30 @@
         align-items: flex-end;
         align-items: stretch; */
 
-        justify-content: center; /*align horizontally center all items along the flex direction*/
-        justify-content: space-between; /*distribute horizontal space equally between items*/
+        /*justify-content: center;*/ /*align horizontally center all items along the flex direction*/
+        /*justify-content: space-between;*/ /*distribute horizontal space equally between items*/
+        /* justify-content: flex-start; */
+
+        gap: 30px;
+      }
+
+      .el {
+        /* margin-right: 30px; */ /*one way of adding gap or margin between elements but it is not needed now*/
+      }
+
+      .el--1 {
+        align-self: flex-start;
+        /* order: 2; */
+      }
+
+      .el--5 {
+        align-self: stretch;
+        order: 1;
+      }
+
+      .el--6 {
+        order: -1; /*move the item to the first position form the flex-direction*/
+        /* default value of order is 0 */
       }
     </style>
   </head>
