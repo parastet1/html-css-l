@@ -16,7 +16,7 @@ p {
 .container {
   margin: auto;
   margin-top: 32px;
-  width: 728px;
+  width: 818px;
   position: relative;
 }
 
@@ -48,10 +48,11 @@ p {
 
 .article-price {
   font-size: 24px;
-  /* margin-top: 16px; */
 }
 
 .article-shipping {
+  line-height: 24px;
+  vertical-align: middle;
   color: #7a7a7a;
   text-transform: uppercase;
   font-weight: bold;
@@ -141,11 +142,27 @@ button:hover {
 .article-image__container,
 .article-price-colors__container,
 .article-details__container {
-  width: 240px;
+  width: 270px;
   float: left;
   margin-bottom: 16px;
 }
 
+.article-price-colors__container,
+.article-details__container {
+  padding: 0 10px;
+}
+
+.article-price-colors__container p:first-child {
+  display: inline;
+  float: left;
+}
+
+.article-price-colors__container p:nth-child(2) {
+  display: inline;
+  float: right;
+}
+
+.article-price-colors__container p:nth-child(3),
 .clear {
   clear: both;
 }
