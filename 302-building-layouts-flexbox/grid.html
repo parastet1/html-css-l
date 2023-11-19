@@ -42,11 +42,11 @@
         /* CSS GRID */
         /* grid container + grid items */
         /* two dimensional layout */
-        display: grid;
+        display: none;
         /* grid-template-columns: 200px 200px 100px 100px;
         grid-template-rows: 300px 200px; */
         /*gap: 30px; /* /*earlier called grid-gap, margin will not work, hence use gap only*/
-        /* 
+        /*
         grid-template-columns: 200px 200px 1fr 100px;
         grid-template-columns: 200px 200px 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -97,6 +97,27 @@
         height: 600px;
 
         /* CSS GRID */
+
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+        /* align tracks in the container */
+        justify-content: center;
+        /* justify-content: space-between; */
+
+        align-content: center;
+        /* 👆 aligns tracks vertically center*/
+        /* align-content: space-between; */
+
+        /* align item inside cells */
+        align-items: end;
+        justify-items: end;
+      }
+
+      .el--3 {
+        align-self: center;
+        justify-self: center;
       }
     </style>
   </head>
