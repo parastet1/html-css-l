@@ -9,11 +9,11 @@
 body {
   color: #444;
   font-family: sans-serif;
-  border-top: 10px solid #1098ad;
   margin: 0 10px;
 }
 
 .container {
+  border-top: 10px solid #1098ad;
   width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -252,7 +252,7 @@ footer {
 
 /* flexbox */
 
-.main-header {
+/* .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -285,4 +285,44 @@ footer {
 
 aside {
   flex: 0 0 300px;
+} */
+
+/* grid layout */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 30px 300px;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 15px;
+  align-items: center;
+}
+
+aside {
+  grid-column: 3;
+  align-self: start;
+}
+
+.related-post {
+  display: flex;
+  gap: 10px;
+}
+
+.related-link {
+  font-style: normal;
+  font-weight: bold;
+}
+
+footer {
+  grid-column: 1 /-1;
 }
