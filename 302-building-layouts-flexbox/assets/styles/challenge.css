@@ -171,7 +171,7 @@ button:hover {
 */
 
 /* flexbox impl */
-.row {
+/* .row {
   display: flex;
   gap: 20px;
 }
@@ -180,4 +180,27 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+} */
+
+/* grid implementation */
+.article {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 15px;
+}
+
+.article-title {
+  grid-column: 1/-1;
+  margin-bottom: 0;
+}
+
+.article-price-shipping-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  grid-column: 1/-1;
 }
