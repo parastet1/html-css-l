@@ -14,7 +14,7 @@
       }
       .el--3 {
         background-color: green;
-        /* height: 150px; */
+        height: 150px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -43,11 +43,10 @@
         /* grid container + grid items */
         /* two dimensional layout */
         display: grid;
-        grid-template-columns: 200px 200px 100px 100px;
-        grid-template-rows: 300px 200px;
-        gap: 30px; /*earlier called grid-gap, margin will not work, hence use gap only*/
-        column-gap: 30px;
-        row-gap: 60px;
+        /* grid-template-columns: 200px 200px 100px 100px;
+        grid-template-rows: 300px 200px; */
+        /*gap: 30px; /* /*earlier called grid-gap, margin will not work, hence use gap only*/
+        /* 
         grid-template-columns: 200px 200px 1fr 100px;
         grid-template-columns: 200px 200px 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -56,12 +55,34 @@
         grid-template-columns: 3fr 1fr 1fr 1fr;
         grid-template-columns: 3fr 1fr 1fr auto;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); */
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr;
         grid-template-rows: 2fr 1fr;
-        grid-template-rows: 1fr auto;
-        height: 500px;
+        grid-template-rows: 1fr auto; */
+        grid-template-rows: 1fr 1fr;
+        /* height: 500px; */
+
+        column-gap: 30px;
+        row-gap: 60px;
+      }
+
+      .el--8 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+
+      .el--2 {
+        /* grid-column: 1/2; */ /*if the second value is just 1 more than the first then we can omit second value*/
+        /* grid-column: 1; */
+        /* grid-column: 1 / 4; */ /* instead of specifying the final grid column we can use span, so we say start at some position and span by that columns*/
+        /* grid-column: 1 / span 3; */ /*start at grid column 1 and span two columns*/
+        grid-column: 1/-1; /*span all the rows*/
+        grid-row: 2;
+      }
+
+      .el--6 {
+        /* grid-row: 3 / 6; */
       }
 
       .container--2 {
