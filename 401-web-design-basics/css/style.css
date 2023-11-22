@@ -58,6 +58,9 @@ h2 {
   text-transform: uppercase;
   display: inline-block;
   font-weight: 500;
+  border-radius: 1000px;
+  /* giving border radius value higher than the element height will produced perfectly rounded borders */
+  /* put a really large value to be safe */
 }
 
 .btn:hover,
@@ -75,6 +78,9 @@ h2 {
   padding: 8px 12px;
 }
 
+img {
+  border-radius: 12px;
+}
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
@@ -135,6 +141,7 @@ img {
   background-color: #087f5b;
   color: #fff;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -176,7 +183,15 @@ img {
   box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.08);
 
   /* we also have text-shadow, that can be useful for making text contrasting on top of images */
+
+  border-radius: 12px;
 }
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .chair-box {
   padding: 24px;
 }
