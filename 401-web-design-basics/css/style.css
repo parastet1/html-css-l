@@ -156,6 +156,27 @@ img {
 }
 
 /* CHAIRS */
+.chair {
+  /* box-shadow: 20px 20px 20px 10px rgb(0, 0, 0, 0.8); */
+  /* box-shadow: offsetX offsetY blur blurScale color */
+  /* we generally use very low opacity for color 0.1 */
+  /* generally, in user interface design, we want a shadow from top 
+  hence, offsetX is not necessary and we set it to 0
+  */
+
+  /* box-shadow: 0 20px 0 10px rgb(0, 0, 0, 0.8); */
+
+  /* if shadowScale is 0, then the lateral shadows i.e. left-right will be behind the box for top-bottom desing
+    if it is not 0 but some positive value then the shadow will scale hence we might see some lateral shadow
+  */
+
+  /* shadowScale is generally 0 */
+
+  /* box-shadow: 0 20px 0 0 rgb(0, 0, 0, 0.8); */
+  box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.08);
+
+  /* we also have text-shadow, that can be useful for making text contrasting on top of images */
+}
 .chair-box {
   padding: 24px;
 }
