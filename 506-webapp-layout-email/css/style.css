@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  height: 100vh;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #222;
+  display: grid;
+  grid-template-columns: 80px 300px minmax(400px, 3fr) minmax(150px, 1fr);
+  grid-template-rows: 50px 1fr;
+}
+
+nav {
+  color: #fff;
+  background-color: #495057;
+  grid-row: 1/-1;
+}
+
+menu {
+  background-color: #845ef7;
+  color: #fff;
+  grid-column: 2/-1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+
+.btns-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background: none;
+}
+
+section,
+aside {
+  background-color: #f1f3f5;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  height: max-content;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #5f3dc4;
+}
+
+.btn:hover {
+  background-color: #6741d9;
+}
+
+.btn-trash:link,
+.btn-trash:visited {
+  background-color: #d6336c;
+}
+
+.btn-trash:hover {
+  background-color: #e64980;
+}
+
+nav,
+.email-view,
+.additional-info {
+  padding-top: 1rem;
+}
+
+.inbox {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.inbox::-webkit-scrollbar {
+  display: none;
+}
+
+.email {
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  background-color: #e9ecef;
+  border-bottom: 1px solid #dee2e6;
+  color: #222;
+}
+
+.email:first-child {
+  border-top: 1px solid #dee2e6;
+}
+
+.email:hover {
+  background-color: #dee2e6;
+}
