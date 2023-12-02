@@ -44,37 +44,5 @@ body {
 }
 
 html {
-  /* font-size: 10px; */
-  /*handy trick: setting the font-size to 10px makes the rem calculation easy
-    this is not perfect because it does not respect the user defined browser font size
-
-    best way is to set the font-size with respect to some percentage of the browser font size setting
-  */
-
-  /* 10px / 16px = 6.25 */
   font-size: 62.5%;
-}
-
-.test {
-  /* width: 1000px; */
-  background-color: red;
-  padding: 100px;
-  /* max-width: 1000px; */
-  /* max-width tells that if the width of the container is larger than 1000px, then the element width will be fixed to 1000px
-    if the width of the container is less than 1000px then the width of the element will be 100% of the container.
-  */
-
-  max-width: 50rem;
-  /* rem stands for root element font size
-    <html> is the root element
-    if we don't specify any font size on root element, then the default size is the browser default size that is 16px always.
-
-    so 1rem = 16px, hence 50rem = 800px
-
-    the strength of rem lies in the fact that if we modify the font-size of the root element then in all places the size of texts and elements will be adjusted according to the set rem size.
-  */
-
-  padding: 4rem;
-  color: #fff;
-  font-size: 2rem;
 }
