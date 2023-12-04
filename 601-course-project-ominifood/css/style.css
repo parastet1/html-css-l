@@ -16,7 +16,7 @@ spacing px
 
 COLORS
 primary: #e67e22
-tints: #fdf2e9
+tints: #fdf2e9, #fae5d3
 shades:#cf711f
 accents:
 greys: #555 #333
@@ -48,6 +48,41 @@ body {
 }
 
 /* ==== reusable grid ====*/
+
+.heading {
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
 .container {
   /* another standard is 1140px */
   max-width: 120rem;
@@ -57,7 +92,8 @@ body {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -71,6 +107,10 @@ body {
 
 .grid--4--cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center--v {
+  align-items: center;
 }
 
 .section-hero {
@@ -90,15 +130,6 @@ body {
 
 .hero-img {
   width: 100%;
-}
-
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
 }
 
 .hero-description {
@@ -241,5 +272,59 @@ body {
 /* ==== section how it works ==== */
 .section-how {
   padding: 9.6rem 0;
-  background-color: orangered;
+}
+
+.step-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-image-box::before,
+.step-image-box::after {
+  /* ::before and ::after pseudo elements cannot be used for images */
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.step-image-box::before {
+  background-color: #fae5d3;
+  width: 60%;
+  padding-bottom: 60%;
+  z-index: -1;
+}
+
+.step-image-box::after {
+  background-color: #fdf2e9;
+  width: 70%;
+  /* height: 62%; */
+  /* height property won't work in % for pseudo element */
+  /* we need an alternative */
+  /* use padding-bottom in percentage */
+  /* padding will be applied to width also, so it will give some height to the element */
+  padding-bottom: 70%;
+  z-index: -2;
+  /* higher z-index will be placed on top of another element */
+}
+
+.step-image {
+  width: 50%;
+}
+
+.step-number {
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.7;
 }
