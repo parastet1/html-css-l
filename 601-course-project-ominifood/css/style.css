@@ -49,12 +49,13 @@ body {
 
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -160,3 +161,20 @@ body {
   color: #cf711f;
   font-weight: 700;
 }
+
+
+/* ==== header ==== */
+
+.header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo{
+  height: 2.4rem;
+}
+
