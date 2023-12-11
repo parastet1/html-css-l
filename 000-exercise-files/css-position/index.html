@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+            padding: 2rem;
+            background-color: #52489c;
+            height:200rem;
+        }
+
+        body{
+            color:#2f2f2f;
+            font-family: sans-serif;
+            padding: 4rem;
+            background-color: #59c3c3;
+        }
+
+        .box{
+            padding: 1rem;
+            background-color: #EBEBEB;
+            margin-bottom: 2rem;
+            font-size: 3.2rem;
+            font-weight: bold;
+        }
+
+        .box:first-child{   
+            background-color: #FAC748;
+            position: fixed;      
+            top:0;
+            left:0;
+            width:100%;
+            /* the positioning context is viewport, hence the fixed element will occupy 100% width of the viewport */
+        }
+
+        .box:last-child{
+            background-color: #F88DAD;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">first</div>
+    <div class="box">second</div>
+    <div class="box">third</div>
+</body>
+</html>
