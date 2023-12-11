@@ -36,6 +36,17 @@ WHITESPACE
   box-sizing: border-box;
 }
 
+*:focus {
+  /* outline is an accessibility feature */
+  outline: none;
+  /* so we should never set it to none, rather style it using one or the other way */
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  /* this outline does not wrap around the rounded borders nicely */
+  /* better approach is to use box shadow */
+  box-shadow: 0 0 0 0.8rem rgb(230 125 34/0.5);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -166,6 +177,7 @@ strong {
   margin-bottom: 4.8rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -178,6 +190,9 @@ strong {
   /* transition property adds animation between the original state of the element and other states */
   /* transition all means transition all properties from one state to another state, and 1s means transition in 1 second gradually, so it will create a smooth animation */
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -206,6 +221,18 @@ strong {
 
   /* so use box-shadow inset property to mimic border inside an element */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -680,7 +707,7 @@ strong {
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
-  height: 50rem;
+  /* height: 50rem; */
 }
 
 .cta-text-box {
@@ -690,13 +717,15 @@ strong {
 }
 
 .cta .heading-secondary {
-  color: #45260a;
+  /* color: #45260a; */
+  color: inherit;
   margin-bottom: 3.2rem;
 }
 
 .cta-text {
   font-size: 1.8rem;
   line-height: 1.5;
+  margin-bottom: 4.8rem;
 }
 
 .cta-img-box {
@@ -708,4 +737,47 @@ strong {
     url("../images/eating.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  color: inherit;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  /* form input fields do not inherit the font-family from the body element */
+  font-family: inherit;
+  /* inherit means inherit the font-family from the relevant parent */
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgb(0 0 0 /0.1);
+  /* the pop up that appears for SELECT element depends on the OS, so we can't manipulate the color of it */
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta * {
+  transition: all 0.3s;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(253 242 233/0.5);
 }
